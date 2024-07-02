@@ -4,17 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Real Event Planner</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="TREP.css"/>
   </head>
   <body>
     <header>
       <h1>THE REAL EVENT PLANNER</h1>
       <nav>
-        <ul>
+        <!-- <ul>
           <li><a href="#">home</li>
-          <li><a href="#">schedule</li>
-        </ul>
+          <li><a href="schedule.html">schedule</li>
+        </ul> -->
       </nav>
+      <div class="dropdown" style="float:right;">
+      <button class="btn">Menu</button>
+    <div class="menu-items" style="right: 0%;">
+    <a href="TREP.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="">Off Season</a>
+    <a href="register.html">Sign In</a>
+  </div>
+</div>
     </header>
+    <main>
+      <section>
+        <h2>About Us</h2>
+        <div>
+          <p>Welcome to The Real Event Planner, where organization meets inspiration! We specialize in crafting beautifully designed planners to help you conquer your days with style and purpose.</p>
+
+           <p>At The Real Event Planner, we understand that life can get hectic, which is why we're dedicated to creating planners that not only keep you on track but also spark joy in your daily routine. From sleek and professional designs to vibrant and whimsical layouts, we offer a diverse range of options to suit every personality and lifestyle.</p>
+        </div>
+     
+      <form>
+        <h3>Request Booking:</h3>
+        <label for="username">Name:</label>
+        <input class="text-input" id="username" type="text" placeholder="Full Name"> 
+      </input>
+      <label for="email">Email</label>
+      <input class="text-input" id="email" type="text" placeholder="me@example.com"> 
+    </input>
+    <p class="flex-row">
+      <label for="expertise">Event Type</label>
+      <select id="expertise">
+        <Option>Wedding</Option>
+        <Option>Graduation</Option>
+        <Option>Family events</Option>
+        <Option>Birthdays</Option>
+        <Option>Other</Option>
+      </select>
+    </p>
+    <p>
+      <label for="comments">Comments:</label>
+      <textarea class="text-input" id="booking request" placeholder="I would like to schedule an (event) for (date)"></textarea>
+    </p>
+    <p>
+      <button>Submit</button>
+    </p>
+  </section>
+      </form>
+    </main>
+
+    <footer>
+      <span>Copyright ©️ 2024 The Real Event Planner.
+      </span>
+    </footer>
+
   </body>
 </html>
